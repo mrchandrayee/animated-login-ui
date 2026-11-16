@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>Animated Login UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Animated Login UI</h1>
+
+    <section class="demo-frame" aria-label="Animated login form demo">
+      <div class="square">
+        <i aria-hidden="true"></i>
+        <i aria-hidden="true"></i>
+        <i aria-hidden="true"></i>
+
+        <form class="login-form" id="loginForm">
+          <h2>Login</h2>
+
+          <div class="field">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="Username" autocomplete="username" required>
+          </div>
+
+          <div class="field password-field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required>
+            <button class="show-password" id="showPassword" type="button" aria-pressed="false">Show</button>
+          </div>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+          <button class="submit-button" type="submit">Sign in</button>
+
+          <div class="form-links">
+            <button type="button" class="text-link" data-message="Password recovery is a demo action.">Forgot Password?</button>
+            <button type="button" class="text-link" data-message="Signup is a demo action.">Signup</button>
+          </div>
+        </form>
+      </div>
+      <div class="code-caption">Comment "Login" for code</div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
